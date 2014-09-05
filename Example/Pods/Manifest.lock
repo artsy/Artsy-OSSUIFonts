@@ -1,0 +1,20 @@
+PODS:
+  - Artsy+OSSUIFonts (1.0.0)
+  - Expecta (0.3.0)
+  - Specta (0.2.1)
+
+DEPENDENCIES:
+  - Artsy+OSSUIFonts (from `../`)
+  - Expecta
+  - Specta
+
+EXTERNAL SOURCES:
+  Artsy+OSSUIFonts:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Artsy+OSSUIFonts: 32b38bd97d16c5a4386a540d557875f323501421
+  Expecta: ce8a51b9fad15a2cd573b291cb2909aaed865350
+  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
+
+COCOAPODS: 0.33.1

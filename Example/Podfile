@@ -1,0 +1,11 @@
+
+target 'FontApp' do
+  pod "Artsy+OSSUIFonts", :path => "../"
+end
+  
+target 'Tests', :exclusive => true do
+  pod "Artsy+OSSUIFonts", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end

@@ -9,6 +9,6 @@ before_script:
   - brew install xctool
 install: 
   - cd Example ; bundle exec pod install; cd ..
-xcode_workspace: Example/Artsy+UIFonts.xcworkspace
+xcode_workspace: Example/Artsy+OSSUIFonts.xcworkspace
 xcode_scheme: FontApp
 xcode_sdk: iphonesimulator

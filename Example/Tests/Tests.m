@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <Artsy+OSSUIFonts/UIFont+OSSArtsyFonts.h>
 
+#ifndef expect
+#define expect(...) EXP_expect((__VA_ARGS__))
+#endif
+
 SpecBegin(FontSpecs)
 
 it(@"serifBoldItalicFont to be the right font", ^{

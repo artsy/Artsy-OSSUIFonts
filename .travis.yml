@@ -1,0 +1,14 @@
+osx_image: xcode61
+language: objective-c
+before_install: 
+  - bundle install
+before_script:
+  - export LANG=en_US.UTF-8
+  - brew update
+  - brew uninstall xctool
+  - brew install xctool
+install: 
+  - cd Example ; bundle exec pod install; cd ..
+xcode_workspace: Example/Artsy+UIFonts.xcworkspace
+xcode_scheme: FontApp
+xcode_sdk: iphonesimulator

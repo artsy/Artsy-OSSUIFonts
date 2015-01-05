@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/artsy/Artsy-OSSUIFonts"
   s.license          = 'Code is MIT, then custom font licenses.'
   s.author           = { "Orta" => "orta.therox@gmail.com" }
-  s.source           = { :git => "https://github.com/artsy/Artsy-OSSUIFonts.git" }
+  s.source           = { :git => "https://github.com/artsy/Artsy-OSSUIFonts.git", :tag => s.version }
   s.social_media_url = 'https://twitter.com/artsy'
 
   s.platform     = :ios, '7.0'
@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.source_files = 'Pod/Classes'
   s.resources = 'Pod/Assets/*'
 
-  s.frameworks = 'UIKit'
+  s.frameworks = 'UIKit', 'CoreText'
   s.module_name = 'Artsy_UIFonts'
 end

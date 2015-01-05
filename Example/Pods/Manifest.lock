@@ -1,20 +1,28 @@
 PODS:
   - Artsy+OSSUIFonts (1.0.0)
   - Expecta (0.3.0)
-  - Specta (0.2.1)
+  - Specta (0.3.0.beta1)
 
 DEPENDENCIES:
   - Artsy+OSSUIFonts (from `../`)
   - Expecta
-  - Specta
+  - Specta (from `https://github.com/specta/specta.git`, tag `v0.3.0.beta1`)
 
 EXTERNAL SOURCES:
   Artsy+OSSUIFonts:
     :path: ../
+  Specta:
+    :git: https://github.com/specta/specta.git
+    :tag: v0.3.0.beta1
+
+CHECKOUT OPTIONS:
+  Specta:
+    :git: https://github.com/specta/specta.git
+    :tag: v0.3.0.beta1
 
 SPEC CHECKSUMS:
   Artsy+OSSUIFonts: 32b38bd97d16c5a4386a540d557875f323501421
   Expecta: ce8a51b9fad15a2cd573b291cb2909aaed865350
-  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
+  Specta: d2158a483ad179e5f8d3a29f75ff4fc0ff6fab16
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.36.0.beta.1

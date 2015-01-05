@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/artsy/Artsy-OSSUIFonts.svg?branch=master)](https://travis-ci.org/artsy/Artsy-OSSUIFonts)
+
 # Artsy+OSSUIFonts
 
 This project contains the fonts and UIFont categories required to make a project with standard artsy design. We cannot include the fonts that we would normally use in a public project, so these are the closest equivilents that are available and have open source-compatible licenses.

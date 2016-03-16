@@ -1,11 +1,11 @@
 
 target 'FontApp' do
-  pod "Artsy+OSSUIFonts", :path => "../"
+  pod "Artsy+UIFonts", :path => "../"
 end
   
 target 'Tests', :exclusive => true do
-  pod "Artsy+OSSUIFonts", :path => "../"
+  pod "Artsy+UIFonts", :path => "../"
 
-  pod 'Specta', :git => 'https://github.com/specta/specta.git', :tag => 'v0.3.0.beta1'
+  pod 'Specta'
   pod 'Expecta'
 end

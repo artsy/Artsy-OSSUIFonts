@@ -1,0 +1,26 @@
+{
+  "name": "Artsy+UIFonts",
+  "version": "2.0.0",
+  "summary": "The open source fonts for Artsy apps + UIFont categories.",
+  "homepage": "https://github.com/artsy/Artsy-OSSUIFonts",
+  "license": "Code is MIT, then custom font licenses.",
+  "authors": {
+    "Orta": "orta@artsymail.com"
+  },
+  "source": {
+    "git": "https://github.com/artsy/Artsy-OSSUIFonts.git",
+    "tag": "2.0.0"
+  },
+  "social_media_url": "https://twitter.com/artsyopensource",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes",
+  "resources": "Pod/Assets/*",
+  "frameworks": [
+    "UIKit",
+    "CoreText"
+  ],
+  "module_name": "Artsy_UIFonts"
+}

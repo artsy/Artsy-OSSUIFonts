@@ -12,7 +12,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		60FF7AA11954A86F007DD14C /* Artsy+OSSUIFonts.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 60FF7A9E1954A86F007DD14C /* Artsy+OSSUIFonts.podspec */; };
+		60FF7AA11954A86F007DD14C /* Artsy+UIFonts.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 60FF7A9E1954A86F007DD14C /* Artsy+UIFonts.podspec */; };
 		60FF7AA31954A86F007DD14C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 60FF7AA01954A86F007DD14C /* README.md */; };
 		60FF7AA91954AC96007DD14C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		60FF7AAA1954AC96007DD14C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -51,7 +51,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		60FF7A9E1954A86F007DD14C /* Artsy+OSSUIFonts.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Artsy+OSSUIFonts.podspec"; path = "../Artsy+OSSUIFonts.podspec"; sourceTree = "<group>"; };
+		60FF7A9E1954A86F007DD14C /* Artsy+UIFonts.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Artsy+UIFonts.podspec"; path = "../Artsy+UIFonts.podspec"; sourceTree = "<group>"; };
 		60FF7AA01954A86F007DD14C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		60FF7AA81954AC96007DD14C /* FontApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60FF7AAE1954AC96007DD14C /* FontApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FontApp-Info.plist"; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 		60FF7A9D1954A861007DD14C /* Pod Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				60FF7A9E1954A86F007DD14C /* Artsy+OSSUIFonts.podspec */,
+				60FF7A9E1954A86F007DD14C /* Artsy+UIFonts.podspec */,
 				60FF7AA01954A86F007DD14C /* README.md */,
 			);
 			name = "Pod Metadata";
@@ -200,6 +200,7 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				22FC29C70CA04FF9922C85F3 /* Copy Pods Resources */,
+				A8D891594988E5FCB6C12A29 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +221,7 @@
 				60FF7AA51954AC96007DD14C /* Frameworks */,
 				60FF7AA61954AC96007DD14C /* Resources */,
 				7DEE6F75F7EC40A6A6542C1A /* Copy Pods Resources */,
+				6DC82E178B85A528AFFA77EC /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,7 +273,7 @@
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 				60FF7AA31954A86F007DD14C /* README.md in Resources */,
-				60FF7AA11954A86F007DD14C /* Artsy+OSSUIFonts.podspec in Resources */,
+				60FF7AA11954A86F007DD14C /* Artsy+UIFonts.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +319,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		6DC82E178B85A528AFFA77EC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FontApp/Pods-FontApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7DEE6F75F7EC40A6A6542C1A /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,6 +347,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FontApp/Pods-FontApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8D891594988E5FCB6C12A29 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B453C470F2CC41B1BC9C8DC3 /* Check Pods Manifest.lock */ = {

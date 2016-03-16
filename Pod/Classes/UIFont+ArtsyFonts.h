@@ -1,11 +1,3 @@
-//
-//  UIFont+ArtsyFonts.h
-//  Artsy
-//
-//  Created by Orta Therox on 11/11/2011.
-//  Copyright (c) 2011 Artsy. All rights reserved.
-//
-
 @interface UIFont (ArtsyFonts)
 
 + (UIFont *)serifBoldItalicFontWithSize:(CGFloat)size;

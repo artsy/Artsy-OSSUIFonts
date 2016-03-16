@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
-  s.name             = "Artsy+OSSUIFonts"
-  s.version          = "1.1.0"
+  s.name             = "Artsy+UIFonts"
+  s.version          = "2.0.0"
   s.summary          = "The open source fonts for Artsy apps + UIFont categories."
   s.homepage         = "https://github.com/artsy/Artsy-OSSUIFonts"
   s.license          = 'Code is MIT, then custom font licenses.'
-  s.author           = { "Orta" => "orta.therox@gmail.com" }
+  s.author           = { "Orta" => "orta@artsymail.com" }
   s.source           = { :git => "https://github.com/artsy/Artsy-OSSUIFonts.git", :tag => s.version }
-  s.social_media_url = 'https://twitter.com/artsy'
+  s.social_media_url = 'https://twitter.com/artsyopensource'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true

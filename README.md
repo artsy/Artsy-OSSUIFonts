@@ -24,7 +24,7 @@ To run the example project; clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-Artsy+OSSUIFonts is available through [CocoaPods](http://cocoapods.org), and the [Artsy Specs Repo](https://github.com/artsy/specs).
+Artsy+UIFonts is available through [CocoaPods](http://cocoapods.org), and the [Artsy Specs Repo](https://github.com/artsy/specs).
 
 To install the Specs repo run:
 
@@ -32,7 +32,7 @@ To install the Specs repo run:
 
 To install the pod, add following line to your Podfile:
 
-    pod "Artsy+OSSUIFonts"
+    pod "Artsy+UIFonts"
 
 ## Wrapper
 

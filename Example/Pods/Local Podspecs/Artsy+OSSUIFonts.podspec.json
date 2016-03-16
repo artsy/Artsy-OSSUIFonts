@@ -1,14 +1,14 @@
 {
   "name": "Artsy+OSSUIFonts",
-  "version": "1.1.0",
-  "summary": "The open source fonts for Artsy apps + UIFont categories.",
-  "homepage": "https://github.com/artsy/Artsy-OSSUIFonts",
-  "license": "Code is MIT, then custom font licenses.",
+  "version": "1.0.0",
+  "summary": "The fonts for Artsy apps + UIFont categories.",
+  "homepage": "https://github.com/artsy/Artsy+OSSUIFonts",
+  "license": "Proprietary",
   "authors": {
     "Orta": "orta.therox@gmail.com"
   },
   "source": {
-    "git": "https://github.com/artsy/Artsy-OSSUIFonts.git"
+    "git": "https://github.com/artsy/Artsy+OSSUIFonts.git"
   },
   "social_media_url": "https://twitter.com/artsy",
   "platforms": {
@@ -17,9 +17,5 @@
   "requires_arc": true,
   "source_files": "Pod/Classes",
   "resources": "Pod/Assets/*",
-  "frameworks": [
-    "UIKit",
-    "CoreText"
-  ],
-  "module_name": "Artsy_UIFonts"
+  "frameworks": "UIKit"
 }

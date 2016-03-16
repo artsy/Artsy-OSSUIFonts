@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Artsy+OSSUIFonts/UIFont+OSSArtsyFonts.h>
+#import <Artsy+UIFonts/UIFont+ArtsyFonts.h>
 
 #ifndef expect
 #define expect(...) EXP_expect((__VA_ARGS__))

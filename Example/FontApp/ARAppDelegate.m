@@ -15,6 +15,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor colorWithRed:1.000 green:0.820 blue:1.000 alpha:1.000];
     [self.window makeKeyAndVisible];
+
+    self.window.rootViewController = [[UIViewController alloc] init];
     
     NSLog(@"This Demo application is only provided to host the font files. Run the unit tests.");
     return YES;

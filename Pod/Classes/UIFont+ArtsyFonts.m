@@ -1,20 +1,9 @@
-//
-//  UIFont+ArtsyFonts.m
-//  Artsy
-//
-//  Created by Orta Therox on 11/11/2011.
-//  Copyright (c) 2011 Artsy. All rights reserved.
-//
-
-#import "UIFont+OSSArtsyFonts.h"
+#import "UIFont+ArtsyFonts.h"
 #import <CoreText/CoreText.h>
 
 // Based on https://github.com/CocoaPods-Fonts/OpenSans/blob/874e65bc21abe54284e195484d2259b2fe858680/UIFont%2BOpenSans.m
 
 @interface ARFontLoader: NSObject
-
-+ (void)loadFontWithFileName:(NSString *)fontFileName extension:(NSString *)extension;
-
 @end
 
 @implementation ARFontLoader

@@ -8,6 +8,7 @@ before_script:
   - brew uninstall xctool
   - brew install xctool
 install: 
+  - pushd ~/.cocoapods/repos/master/ ; git fetch origin master ; git checkout v0.32.1 ; popd
   - cd Example ; bundle exec pod install --no-repo-update ; cd ..
 xcode_workspace: Example/Artsy+OSSUIFonts.xcworkspace
 xcode_scheme: FontApp

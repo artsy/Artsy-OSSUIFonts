@@ -8,7 +8,7 @@ before_script:
   - brew uninstall xctool
   - brew install xctool
 install: 
-  - cd Example ; bundle exec pod install; cd ..
+  - cd Example ; bundle exec pod install --no-repo-update ; cd ..
 xcode_workspace: Example/Artsy+OSSUIFonts.xcworkspace
 xcode_scheme: FontApp
 xcode_sdk: iphonesimulator

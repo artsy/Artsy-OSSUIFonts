@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = "Artsy+OSSUIFonts"
+  s.name             = "Artsy+UIFonts"
   s.version          = "2.0.2"
   s.summary          = "The open source fonts for Artsy apps + UIFont categories."
   s.homepage         = "https://github.com/artsy/Artsy-OSSUIFonts"

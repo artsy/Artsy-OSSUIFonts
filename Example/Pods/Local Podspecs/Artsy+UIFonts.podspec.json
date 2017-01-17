@@ -22,5 +22,5 @@
     "UIKit",
     "CoreText"
   ],
-  "prepare_command": "echo $PWD\necho $ENV"
+  "prepare_command": "echo \"HELLO\"\necho $PWD\necho $ENV"
 }

@@ -13,6 +13,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes'
   s.resources = 'Pod/Assets/*'
+  s.preserve_paths = 'Pod/Scripts/*'
 
   s.frameworks = 'UIKit', 'CoreText'
+  s.prepare_command = "./Pod/Scripts/ArtsySetup.rb"
 end

@@ -3,14 +3,21 @@
 
 // Based on https://github.com/CocoaPods-Fonts/OpenSans/blob/874e65bc21abe54284e195484d2259b2fe858680/UIFont%2BOpenSans.m
 
+// This is changed by the pre-install hook
+
+static BOOL useClosedFonts = false;
+
 @interface ARFontLoader: NSObject
+
++ (void)loadFontWithFileName:(NSString *)fontFileName extension:(NSString *)extension;
+
 @end
 
 @implementation ARFontLoader
 
-+ (void)loadFontWithFileName:(NSString *)fontFileName {
++ (void)loadFontWithFileName:(NSString *)fontFileName extension:(NSString *)extension {
     NSBundle *bundle = [NSBundle bundleForClass:self];
-    NSURL *fontURL = [bundle URLForResource:fontFileName withExtension:@"ttf"];
+    NSURL *fontURL = [bundle URLForResource:fontFileName withExtension:extension];
     NSData *fontData = [NSData dataWithContentsOfURL:fontURL];
 
     CGDataProviderRef provider = CGDataProviderCreateWithCFData((CFDataRef)fontData);
@@ -29,60 +36,84 @@
 
         CFRelease(font);
     }
-
-    CFRelease(provider);
+    if (provider) {
+        CFRelease(provider);
+    }
 }
 
 @end
 
 @implementation UIFont (ArtsyFonts)
 
-+ (instancetype)ar_LoadAndReturnFont:(NSString *)fontName size:(CGFloat)fontSize onceToken:(dispatch_once_t *)onceToken {
++ (instancetype)ar_LoadAndReturnFont:(NSString *)fontName extension:(NSString *)extension size:(CGFloat)fontSize onceToken:(dispatch_once_t *)onceToken {
+    // Overload to default to fontName for fontFileName
+    return [self ar_LoadAndReturnFont:fontName extension:extension size:fontSize onceToken:onceToken fontFileName:fontName];
+}
+
++ (instancetype)ar_LoadAndReturnFont:(NSString *)fontName extension:(NSString *)extension size:(CGFloat)fontSize onceToken:(dispatch_once_t *)onceToken fontFileName:(NSString *)fontFileName {
+
     dispatch_once(onceToken, ^{
-        [ARFontLoader loadFontWithFileName:fontName];
+        [ARFontLoader loadFontWithFileName:fontFileName extension:extension];
     });
 
     return [self fontWithName:fontName size:fontSize];
 }
 
+
 + (UIFont *)serifBoldItalicFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
-    return [self ar_LoadAndReturnFont:@"EBGaramond08-Italic" size:size onceToken:&onceToken];
+    NSString *font = useClosedFonts ? @"AGaramondPro-BoldItalic" : @"EBGaramond08-Italic";
+    NSString *type = useClosedFonts ? @"otf" : @"ttf";
+    return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken];
 }
 
 + (UIFont *)serifBoldFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
-    return [self ar_LoadAndReturnFont:@"EBGaramond08-Regular" size:size onceToken:&onceToken];
+    NSString *font = useClosedFonts ? @"AGaramondPro-Bold" : @"EBGaramond08-Regular";
+    NSString *type = useClosedFonts ? @"otf" : @"ttf";
+    return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken];
 }
 
 + (UIFont *)serifSemiBoldFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
-    return [self ar_LoadAndReturnFont:@"EBGaramond08-Regular" size:size onceToken:&onceToken];
+    NSString *font = useClosedFonts ? @"AGaramondPro-Semibold" : @"EBGaramond12-Regular";
+    NSString *type = useClosedFonts ? @"otf" : @"ttf";
+    return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken];
 }
 
 + (UIFont *)serifFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
-    return [self ar_LoadAndReturnFont:@"EBGaramond12-Regular" size:size onceToken:&onceToken];
+    NSString *font = useClosedFonts ? @"AGaramondPro-Regular" : @"EBGaramond08-Regular";
+    NSString *type = useClosedFonts ? @"otf" : @"ttf";
+    return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken];
 }
 
 + (UIFont *)serifItalicFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
-    return [self ar_LoadAndReturnFont:@"EBGaramond12-Italic" size:size onceToken:&onceToken];
+    NSString *font = useClosedFonts ? @"AGaramondPro-Italic" : @"EBGaramond08-Italic";
+    NSString *type = useClosedFonts ? @"otf" : @"ttf";
+    return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken];
 }
 
 + (UIFont *)sansSerifFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
-    return [self ar_LoadAndReturnFont:@"texgyreadventor-regular" size:size onceToken:&onceToken];
+    NSString *font = useClosedFonts ? @"AvantGardeGothicITCW01Dm" : @"texgyreadventor-regular";
+    NSString *type = useClosedFonts ? @"ttf" : @"ttf";
+    return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken];
 }
+
 
 + (UIFont *)smallCapsSerifFontWithSize:(CGFloat)size
 {
+
+    NSString *fontName = useClosedFonts ? @"AGaramondPro-Regular" : @"EBGaramond12-Regular";
+
     // Force font to be loaded into CoreText system first.
     __unused UIFont *font = [self serifFontWithSize:size];
     
@@ -90,7 +121,7 @@
                                          UIFontFeatureSelectorIdentifierKey : @(1) } ];
 
     NSDictionary *fontAttributes = @{ UIFontDescriptorFeatureSettingsAttribute: fontFeatureSettings,
-                                      UIFontDescriptorNameAttribute: @"EBGaramond12-Regular",
+                                      UIFontDescriptorNameAttribute: fontName,
                                       UIFontDescriptorSizeAttribute: @(size)};
 
     UIFontDescriptor *fontDescriptor = [[UIFontDescriptor alloc] initWithFontAttributes: fontAttributes];

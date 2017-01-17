@@ -17,6 +17,10 @@ To make it work you have to include in the Applications XX-Info.plist. See [here
     <string>texgyreadventor-regular.ttf</string>
 </array>
 ```
+ 
+## Note: As of 3.0 
+ 
+ ...
 
 ## Usage
 

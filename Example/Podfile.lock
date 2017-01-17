@@ -1,5 +1,5 @@
 PODS:
-  - Artsy+UIFonts (2.0.0)
+  - Artsy+UIFonts (3.0.0)
   - Expecta (0.3.0)
   - Specta (1.0.5)
 
@@ -13,8 +13,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Artsy+UIFonts: b1c53a1f9998bfce96ef1b544191f846e7ed1b0e
+  Artsy+UIFonts: 11558923fea2d5049e0619cda9e1bce873c235ae
   Expecta: 917bda2935b63ca7175741b8cf1b26796db6205f
   Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 65b50dff22b5b71a908bf7a53dd4603d59dfaaba
+
+COCOAPODS: 1.1.1

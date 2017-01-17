@@ -6,21 +6,10 @@ This project contains the fonts and UIFont categories required to make a project
 
 You can find out more by checking out the websites for [EB Garamond](http://www.georgduffner.at/ebgaramond/index.html) and [TeX Gyre Adventor](http://www.gust.org.pl/projects/e-foundry/tex-gyre).
 
-To make it work you have to include in the Applications XX-Info.plist. See [here](https://github.com/artsy/Artsy-OSSUIFonts/blob/master/Example/FontApp/FontApp-Info.plist#L37-L45) for an example.
-
-```
-<array>
-    <string>EBGaramond08-Italic.ttf</string>
-    <string>EBGaramond08-Regular.ttf</string>
-    <string>EBGaramond12-Italic.ttf</string>
-    <string>EBGaramond12-Regular.ttf</string>
-    <string>texgyreadventor-regular.ttf</string>
-</array>
-```
  
 ## Note: As of 3.0 
  
- ...
+In 3.0 we moved to using a `prepare_command` to differentiate between OSS contributors and Artsy staff at runtime instead of seperate libraries. This is done inside `/Pod/Scripts/ArtsySetup.rb`.
 
 ## Usage
 

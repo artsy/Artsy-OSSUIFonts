@@ -16,31 +16,31 @@
 SpecBegin(FontSpecs)
 
 it(@"serifBoldItalicFont to be the right font", ^{
-    expect([UIFont serifBoldItalicFontWithSize:12].fontName).to.equal(@"EBGaramond08-Italic");
+    expect([UIFont serifBoldItalicFontWithSize:12].fontName).to.equal(@"AGaramondPro-BoldItalic");
 });
 
 it(@"serifBoldFont to be the right font", ^{
-    expect([UIFont serifBoldFontWithSize:12].fontName).to.equal(@"EBGaramond08-Regular");
+    expect([UIFont serifBoldFontWithSize:12].fontName).to.equal(@"AGaramondPro-Bold");
 });
 
 it(@"serifSemiBoldFont to be the right font", ^{
-    expect([UIFont serifSemiBoldFontWithSize:12].fontName).to.equal(@"EBGaramond08-Regular");
+    expect([UIFont serifSemiBoldFontWithSize:12].fontName).to.equal(@"AGaramondPro-Bold");
 });
 
 it(@"serifFont to be the right font", ^{
-    expect([UIFont serifFontWithSize:12].fontName).to.equal(@"EBGaramond12-Regular");
+    expect([UIFont serifFontWithSize:12].fontName).to.equal(@"AGaramondPro-Regular");
 });
 
 it(@"serifItalicFont to be the right font", ^{
-    expect([UIFont serifItalicFontWithSize:12].fontName).to.equal(@"EBGaramond12-Italic");
+    expect([UIFont serifItalicFontWithSize:12].fontName).to.equal(@"AGaramondPro-Italic");
 });
 
 it(@"sansSerifFont to be the right font", ^{
-    expect([UIFont sansSerifFontWithSize:12].fontName).to.equal(@"TeXGyreAdventor-Regular");
+    expect([UIFont sansSerifFontWithSize:12].fontName).to.equal(@"AvantGardeGothicITCW01Dm");
 });
 
 it(@"smallCapsSerifFont to be the right font", ^{
-    expect([UIFont smallCapsSerifFontWithSize:12].fontName).to.equal(@"EBGaramond12-Regular");
+    expect([UIFont smallCapsSerifFontWithSize:12].fontName).to.equal(@"AGaramondPro-Regular");
 });
 
 SpecEnd

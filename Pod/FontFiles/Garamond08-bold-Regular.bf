@@ -2,12 +2,12 @@
 <font>
 <format>2.2</format>
 
-<postscript_name>AGaramondPro-Semibold</postscript_name>
+<postscript_name>AGaramondPro-Bold</postscript_name>
 <name>Adobe Garamond Pro</name>
 <subfamily>08 Regular</subfamily>
 <bold>false</bold>
 <italic>false</italic>
-<full_name>Adobe Garamond Pro Semibold</full_name>
+<full_name>Adobe Garamond Pro Bold</full_name>
 <unique_identifier>Sorts Mill Tools 2.1.0_alpha1 : EB Garamond 08 Regular : 8-4-2014</unique_identifier>
 <version>Version 0.016 - Artsy</version>
 <description></description>
@@ -124,6 +124,21 @@ OTHER DEALINGS IN THE FONT SOFTWARE.</license>
 	<bottom_limit>-27.4000000000</bottom_limit>
 </horizontal>
 
+<grid width="1.0000"/>
+<grid width="2.0000"/>
+<grid width="4.0000"/>
+<grid width="1.0000"/>
+<grid width="1.0000"/>
+<grid width="2.0000"/>
+<grid width="4.0000"/>
+<grid width="1.0000"/>
+<grid width="2.0000"/>
+<grid width="1.0000"/>
+<grid width="2.0000"/>
+<grid width="4.0000"/>
+<grid width="1.0000"/>
+<grid width="2.0000"/>
+<grid width="4.0000"/>
 <grid width="1"/>
 <grid width="2"/>
 <grid width="4"/>
@@ -276,8 +291,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.</license>
 	<selected id="0"/>
 	<glyph id="0" left="-20" right="33">
 		<layer name= "Layer" visible="true">
-			<path data="S -15.0000000000,10.0000000000 M 15.0000000000,10.0000000000 M 15.0000000000,49.2000000000 M -15.0000000000,49.2000000000 M -15.0000000000,10.0000000000" />
-			<path data="S -20.0000000000,54.2000000000 M 20.0000000000,54.2000000000 M 20.0000000000,5.0000000000 M -20.0000000000,5.0000000000 M -20.0000000000,54.2000000000" />
+			<path data="S -15.0000000000,10.0000000000 L 15.0000000000,10.0000000000 M 15.0000000000,49.2000000000 M -15.0000000000,49.2000000000 M -15.0000000000,10.0000000000" />
+			<path data="S -20.0000000000,54.2000000000 L 20.0000000000,54.2000000000 M 20.0000000000,5.0000000000 M -20.0000000000,5.0000000000 M -20.0000000000,54.2000000000" />
 		</layer>
 	</glyph>
 </collection>

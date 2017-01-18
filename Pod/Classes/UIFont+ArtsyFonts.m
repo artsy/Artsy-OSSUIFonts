@@ -63,25 +63,27 @@ static BOOL useClosedFonts = false;
 + (UIFont *)serifBoldItalicFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
-    NSString *font = useClosedFonts ? @"AGaramondPro-BoldItalic" : @"EBGaramond08-Italic";
+    NSString *fontFile = useClosedFonts ? @"AGaramondPro-BoldItalic" : @"EBGaramond08-Italic";
     NSString *type = useClosedFonts ? @"otf" : @"ttf";
-    return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken];
+    return [self ar_LoadAndReturnFont:@"AGaramondPro-BoldItalic" extension:type size:size onceToken:&onceToken fontFileName:fontFile];
 }
 
 + (UIFont *)serifBoldFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
-    NSString *font = useClosedFonts ? @"AGaramondPro-Bold" : @"EBGaramond08-Regular";
+    NSString *fontFile = useClosedFonts ? @"AGaramondPro-Bold" : @"EBGaramond08-Regular";
     NSString *type = useClosedFonts ? @"otf" : @"ttf";
-    return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken];
+    return [self ar_LoadAndReturnFont:@"AGaramondPro-Bold" extension:type size:size onceToken:&onceToken fontFileName:fontFile];
 }
 
 + (UIFont *)serifSemiBoldFontWithSize:(CGFloat)size
 {
+    // This does not have corresponding OSS variant, so we re-use the bold one
     static dispatch_once_t onceToken;
-    NSString *font = useClosedFonts ? @"AGaramondPro-Semibold" : @"EBGaramond12-Regular";
+    NSString *fontName = useClosedFonts ? @"AGaramondPro-Semibold" : @"EBGaramond08-Regular";
+    NSString *font = useClosedFonts ? @"AGaramondPro-Semibold" : @"AGaramondPro-Bold";
     NSString *type = useClosedFonts ? @"otf" : @"ttf";
-    return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken];
+    return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken fontFileName:fontName];
 }
 
 + (UIFont *)serifFontWithSize:(CGFloat)size
@@ -89,36 +91,28 @@ static BOOL useClosedFonts = false;
     static dispatch_once_t onceToken;
     NSString *font = useClosedFonts ? @"AGaramondPro-Regular" : @"EBGaramond08-Regular";
     NSString *type = useClosedFonts ? @"otf" : @"ttf";
-    return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken];
+    return [self ar_LoadAndReturnFont:@"AGaramondPro-Regular" extension:type size:size onceToken:&onceToken fontFileName:font];
 }
 
 + (UIFont *)serifItalicFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
-    NSString *font = useClosedFonts ? @"AGaramondPro-Italic" : @"EBGaramond08-Italic";
+    NSString *fontName = useClosedFonts ? @"AGaramondPro-Italic" : @"EBGaramond08-Italic";
     NSString *type = useClosedFonts ? @"otf" : @"ttf";
-    return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken];
+    return [self ar_LoadAndReturnFont:@"AGaramondPro-Italic" extension:type size:size onceToken:&onceToken fontFileName:fontName];
 }
 
 + (UIFont *)sansSerifFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
-    NSString *font = useClosedFonts ? @"AvantGardeGothicITCW01Dm" : @"texgyreadventor-regular";
     NSString *fontFilename = useClosedFonts ? @"ITCAvantGardeDemi_Track03" : @"texgyreadventor-regular";
 
     NSString *type = useClosedFonts ? @"ttf" : @"ttf";
-    if (useClosedFonts) {
-        return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken fontFileName:fontFilename];
-    } else {
-        return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken];
-    }
+    return [self ar_LoadAndReturnFont:@"AvantGardeGothicITCW01Dm" extension:type size:size onceToken:&onceToken fontFileName:fontFilename];
 }
 
 + (UIFont *)smallCapsSerifFontWithSize:(CGFloat)size
 {
-
-    NSString *fontName = useClosedFonts ? @"AGaramondPro-Regular" : @"EBGaramond12-Regular";
-
     // Force font to be loaded into CoreText system first.
     __unused UIFont *font = [self serifFontWithSize:size];
     
@@ -126,7 +120,7 @@ static BOOL useClosedFonts = false;
                                          UIFontFeatureSelectorIdentifierKey : @(1) } ];
 
     NSDictionary *fontAttributes = @{ UIFontDescriptorFeatureSettingsAttribute: fontFeatureSettings,
-                                      UIFontDescriptorNameAttribute: fontName,
+                                      UIFontDescriptorNameAttribute: @"AGaramondPro-Regular",
                                       UIFontDescriptorSizeAttribute: @(size)};
 
     UIFontDescriptor *fontDescriptor = [[UIFontDescriptor alloc] initWithFontAttributes: fontAttributes];

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AC313492F32BEC214FE759A /* libPods-FontApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4487571DFC628601FE21E7C3 /* libPods-FontApp.a */; };
+		3BCFF30F1C0E787780BA5C35 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5C5085565A9D356FF3C393 /* libPods-Tests.a */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,8 +23,6 @@
 		60FF7AB31954AC96007DD14C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FF7AB21954AC96007DD14C /* main.m */; };
 		60FF7AB71954AC96007DD14C /* ARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FF7AB61954AC96007DD14C /* ARAppDelegate.m */; };
 		60FF7AB91954AC96007DD14C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60FF7AB81954AC96007DD14C /* Images.xcassets */; };
-		D70E4923EDBE44DE9B7B349C /* libPods-FontApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8F5F50CFA641EABD683520 /* libPods-FontApp.a */; };
-		F5F4200D4F7348F2BB4F6E89 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DE85CFD14B47C688D0C93C /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F0C45488E0ADC181B483424 /* Pods-FontApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FontApp/Pods-FontApp.release.xcconfig"; sourceTree = "<group>"; };
-		194AF0BC39F1AE1DDD0D4311 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1D1C3EA161732A19A96771BD /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3C8F5F50CFA641EABD683520 /* libPods-FontApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FontApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51E86FE7F33B44A39507BAB4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		091A81907088E324AB8BA401 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		30B0EDF6C57414757AE99CC4 /* Pods-FontApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FontApp/Pods-FontApp.release.xcconfig"; sourceTree = "<group>"; };
+		4487571DFC628601FE21E7C3 /* libPods-FontApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FontApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* Artsy+UIFonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Artsy+UIFonts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,7 +49,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		60FF7A9E1954A86F007DD14C /* Artsy+UIFonts.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Artsy+UIFonts.podspec"; path = "../Artsy+UIFonts.podspec"; sourceTree = "<group>"; };
+		60FF7A9E1954A86F007DD14C /* Artsy+UIFonts.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; name = "Artsy+UIFonts.podspec"; path = "../Artsy+UIFonts.podspec"; sourceTree = "<group>"; };
 		60FF7AA01954A86F007DD14C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		60FF7AA81954AC96007DD14C /* FontApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60FF7AAE1954AC96007DD14C /* FontApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FontApp-Info.plist"; sourceTree = "<group>"; };
@@ -61,8 +59,9 @@
 		60FF7AB51954AC96007DD14C /* ARAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARAppDelegate.h; sourceTree = "<group>"; };
 		60FF7AB61954AC96007DD14C /* ARAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARAppDelegate.m; sourceTree = "<group>"; };
 		60FF7AB81954AC96007DD14C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B440636FF7B81CAFAAAD181A /* Pods-FontApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FontApp/Pods-FontApp.debug.xcconfig"; sourceTree = "<group>"; };
-		C3DE85CFD14B47C688D0C93C /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8461E3D3BAB6C38418F77C34 /* Pods-FontApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FontApp/Pods-FontApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BE5C5085565A9D356FF3C393 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BECADC5933818045F0181B12 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +72,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				F5F4200D4F7348F2BB4F6E89 /* libPods-Tests.a in Frameworks */,
+				3BCFF30F1C0E787780BA5C35 /* libPods-Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,13 +83,24 @@
 				60FF7AAA1954AC96007DD14C /* CoreGraphics.framework in Frameworks */,
 				60FF7AAB1954AC96007DD14C /* UIKit.framework in Frameworks */,
 				60FF7AA91954AC96007DD14C /* Foundation.framework in Frameworks */,
-				D70E4923EDBE44DE9B7B349C /* libPods-FontApp.a in Frameworks */,
+				1AC313492F32BEC214FE759A /* libPods-FontApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FCDEAD1796D90B2E5B4022C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8461E3D3BAB6C38418F77C34 /* Pods-FontApp.debug.xcconfig */,
+				30B0EDF6C57414757AE99CC4 /* Pods-FontApp.release.xcconfig */,
+				091A81907088E324AB8BA401 /* Pods-Tests.debug.xcconfig */,
+				BECADC5933818045F0181B12 /* Pods-Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +109,7 @@
 				60FF7AAC1954AC96007DD14C /* FontApp */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				F0B2F8566506627EC1CE2903 /* Pods */,
+				0FCDEAD1796D90B2E5B4022C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,9 +130,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				51E86FE7F33B44A39507BAB4 /* libPods.a */,
-				C3DE85CFD14B47C688D0C93C /* libPods-Tests.a */,
-				3C8F5F50CFA641EABD683520 /* libPods-FontApp.a */,
+				4487571DFC628601FE21E7C3 /* libPods-FontApp.a */,
+				BE5C5085565A9D356FF3C393 /* libPods-Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,17 +186,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F0B2F8566506627EC1CE2903 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B440636FF7B81CAFAAAD181A /* Pods-FontApp.debug.xcconfig */,
-				0F0C45488E0ADC181B483424 /* Pods-FontApp.release.xcconfig */,
-				1D1C3EA161732A19A96771BD /* Pods-Tests.debug.xcconfig */,
-				194AF0BC39F1AE1DDD0D4311 /* Pods-Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,12 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
-				5EE8FA74BF444B6EBBD416D0 /* Check Pods Manifest.lock */,
+				3745640CF0F32D54C53FF335 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				22FC29C70CA04FF9922C85F3 /* Copy Pods Resources */,
-				A8D891594988E5FCB6C12A29 /* Embed Pods Frameworks */,
+				CF0EB32D1B62B246837FE3EF /* [CP] Embed Pods Frameworks */,
+				CF2691E9E6FF86D209DD447F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,12 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60FF7ACC1954AC96007DD14C /* Build configuration list for PBXNativeTarget "FontApp" */;
 			buildPhases = (
-				B453C470F2CC41B1BC9C8DC3 /* Check Pods Manifest.lock */,
+				ADC02E8C140634A5840CA441 /* [CP] Check Pods Manifest.lock */,
 				60FF7AA41954AC96007DD14C /* Sources */,
 				60FF7AA51954AC96007DD14C /* Frameworks */,
 				60FF7AA61954AC96007DD14C /* Resources */,
-				7DEE6F75F7EC40A6A6542C1A /* Copy Pods Resources */,
-				6DC82E178B85A528AFFA77EC /* Embed Pods Frameworks */,
+				A7A315FD78BD35334370CAEF /* [CP] Embed Pods Frameworks */,
+				C8F399D18E4B08C3271CE84B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,44 +287,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		22FC29C70CA04FF9922C85F3 /* Copy Pods Resources */ = {
+		3745640CF0F32D54C53FF335 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5EE8FA74BF444B6EBBD416D0 /* Check Pods Manifest.lock */ = {
+		A7A315FD78BD35334370CAEF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6DC82E178B85A528AFFA77EC /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,14 +317,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FontApp/Pods-FontApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7DEE6F75F7EC40A6A6542C1A /* Copy Pods Resources */ = {
+		ADC02E8C140634A5840CA441 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8F399D18E4B08C3271CE84B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,14 +347,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FontApp/Pods-FontApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A8D891594988E5FCB6C12A29 /* Embed Pods Frameworks */ = {
+		CF0EB32D1B62B246837FE3EF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,19 +362,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B453C470F2CC41B1BC9C8DC3 /* Check Pods Manifest.lock */ = {
+		CF2691E9E6FF86D209DD447F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -503,7 +501,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D1C3EA161732A19A96771BD /* Pods-Tests.debug.xcconfig */;
+			baseConfigurationReference = 091A81907088E324AB8BA401 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -526,7 +524,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 194AF0BC39F1AE1DDD0D4311 /* Pods-Tests.release.xcconfig */;
+			baseConfigurationReference = BECADC5933818045F0181B12 /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -545,7 +543,7 @@
 		};
 		60FF7ACD1954AC96007DD14C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B440636FF7B81CAFAAAD181A /* Pods-FontApp.debug.xcconfig */;
+			baseConfigurationReference = 8461E3D3BAB6C38418F77C34 /* Pods-FontApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -563,7 +561,7 @@
 		};
 		60FF7ACE1954AC96007DD14C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F0C45488E0ADC181B483424 /* Pods-FontApp.release.xcconfig */;
+			baseConfigurationReference = 30B0EDF6C57414757AE99CC4 /* Pods-FontApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

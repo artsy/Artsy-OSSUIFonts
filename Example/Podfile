@@ -1,11 +1,10 @@
 
-target 'FontApp' do
-  pod "Artsy+UIFonts", :path => "../"
-end
-  
-target 'Tests', :exclusive => true do
-  pod "Artsy+UIFonts", :path => "../"
+target "FontApp" do
+  pod "Artsy+UIFonts", path: "../"
+  target "Tests" do
+    inherit! :search_paths
 
-  pod 'Specta'
-  pod 'Expecta'
+    pod "Specta"
+    pod "Expecta"
+  end
 end

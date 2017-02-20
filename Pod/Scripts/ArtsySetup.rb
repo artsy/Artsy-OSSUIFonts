@@ -1,9 +1,13 @@
 #!/usr/bin/env ruby
 
+puts "Trying to clone Artsy's Private fonts, it is OK if it fails."
+
 # Artsy Staff gets the real fonts, which are kept behind closed doors.
-if ENV["ARTSY_STAFF_MEMBER"] || ENV["CI"] == "true"
+`git clone https://github.com/artsy/Artsy-UIFonts tmp_fonts`
+
+# This could fail
+if Dir.exist? "tmp_fonts"
   `rm Pod/Assets/*`
-  `git clone https://github.com/artsy/Artsy-UIFonts tmp_fonts`
   `mv tmp_fonts/Pod/Assets/* Pod/Assets`
 
   font_file = "Pod/Classes/UIFont+ArtsyFonts.m"

@@ -89,7 +89,7 @@ static BOOL useClosedFonts = false;
 + (UIFont *)serifFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
-    NSString *font = useClosedFonts ? @"AGaramondPro-Regular" : @"EBGaramond08-Regular";
+    NSString *font = useClosedFonts ? @"AGaramondPro-Regular" : @"EBGaramond12-Regular";
     NSString *type = useClosedFonts ? @"otf" : @"ttf";
     return [self ar_LoadAndReturnFont:@"AGaramondPro-Regular" extension:type size:size onceToken:&onceToken fontFileName:font];
 }
@@ -97,7 +97,7 @@ static BOOL useClosedFonts = false;
 + (UIFont *)serifItalicFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
-    NSString *fontName = useClosedFonts ? @"AGaramondPro-Italic" : @"EBGaramond08-Italic";
+    NSString *fontName = useClosedFonts ? @"AGaramondPro-Italic" : @"EBGaramond12-Italic";
     NSString *type = useClosedFonts ? @"otf" : @"ttf";
     return [self ar_LoadAndReturnFont:@"AGaramondPro-Italic" extension:type size:size onceToken:&onceToken fontFileName:fontName];
 }

@@ -3,11 +3,11 @@
 <format>2.2</format>
 
 <postscript_name>AvantGardeGothicITCW01Dm</postscript_name>
-<name>Avante Gard Gothic ITCW01Dm</name>
+<name>Avante Garde Gothic ITCW01Dm</name>
 <subfamily>Regular</subfamily>
 <bold>false</bold>
 <italic>false</italic>
-<full_name>Avant Gard Gothic ITCW01Dm</full_name>
+<full_name>Avant Garde Gothic ITCW01Dm</full_name>
 <unique_identifier>1.104;URW ;TeXGyreAdventor-Bold</unique_identifier>
 <version>Version 1.104;PS 1.104;hotconv 1.0.49;makeotf.lib2.0.14853 - artsy</version>
 <description></description>
@@ -181,8 +181,8 @@
 	<selected id="0"/>
 	<glyph id="0" left="-20" right="33">
 		<layer name= "Layer" visible="true">
-			<path data="S -15.0000000000,10.0000000000 M 15.0000000000,10.0000000000 M 15.0000000000,63.9000000000 M -15.0000000000,63.9000000000 M -15.0000000000,10.0000000000" />
-			<path data="S -20.0000000000,68.9000000000 M 20.0000000000,68.9000000000 M 20.0000000000,5.0000000000 M -20.0000000000,5.0000000000 M -20.0000000000,68.9000000000" />
+			<path data="S -15.0000000000,10.0000000000 L 15.0000000000,10.0000000000 M 15.0000000000,63.9000000000 M -15.0000000000,63.9000000000 M -15.0000000000,10.0000000000" />
+			<path data="S -20.0000000000,68.9000000000 L 20.0000000000,68.9000000000 M 20.0000000000,5.0000000000 M -20.0000000000,5.0000000000 M -20.0000000000,68.9000000000" />
 		</layer>
 	</glyph>
 </collection>

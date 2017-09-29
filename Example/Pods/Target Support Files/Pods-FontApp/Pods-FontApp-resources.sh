@@ -78,6 +78,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "../../Pod/Assets/EBGaramond08-Regular.ttf"
   install_resource "../../Pod/Assets/EBGaramond12-Italic.ttf"
   install_resource "../../Pod/Assets/EBGaramond12-Regular.ttf"
+  install_resource "../../Pod/Assets/texgyreadventor-bold.ttf"
   install_resource "../../Pod/Assets/texgyreadventor-regular.ttf"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -85,6 +86,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "../../Pod/Assets/EBGaramond08-Regular.ttf"
   install_resource "../../Pod/Assets/EBGaramond12-Italic.ttf"
   install_resource "../../Pod/Assets/EBGaramond12-Regular.ttf"
+  install_resource "../../Pod/Assets/texgyreadventor-bold.ttf"
   install_resource "../../Pod/Assets/texgyreadventor-regular.ttf"
 fi
 

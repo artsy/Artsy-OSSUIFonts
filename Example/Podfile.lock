@@ -1,7 +1,7 @@
 PODS:
   - Artsy+UIFonts (3.1.1)
-  - Expecta (0.3.0)
-  - Specta (1.0.5)
+  - Expecta (1.0.6)
+  - Specta (1.0.7)
 
 DEPENDENCIES:
   - Artsy+UIFonts (from `../`)
@@ -14,8 +14,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Artsy+UIFonts: 058f83a8d8058023409fc250e96373493c2125eb
-  Expecta: 917bda2935b63ca7175741b8cf1b26796db6205f
-  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
 PODFILE CHECKSUM: 65b50dff22b5b71a908bf7a53dd4603d59dfaaba
 

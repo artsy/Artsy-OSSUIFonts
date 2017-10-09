@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/artsy/Artsy-OSSUIFonts.git", :tag => s.version }
   s.social_media_url = 'https://twitter.com/artsyopensource'
 
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
 
   s.source_files = 'Pod/Classes'

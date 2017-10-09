@@ -1,6 +1,6 @@
 {
   "name": "Artsy+UIFonts",
-  "version": "3.0.0",
+  "version": "3.1.1",
   "summary": "The open source fonts for Artsy apps + UIFont categories.",
   "homepage": "https://github.com/artsy/Artsy-OSSUIFonts",
   "license": "Code is MIT, then custom font licenses.",
@@ -9,7 +9,7 @@
   },
   "source": {
     "git": "https://github.com/artsy/Artsy-OSSUIFonts.git",
-    "tag": "3.0.0"
+    "tag": "3.1.1"
   },
   "social_media_url": "https://twitter.com/artsyopensource",
   "platforms": {
@@ -18,9 +18,10 @@
   },
   "source_files": "Pod/Classes",
   "resources": "Pod/Assets/*",
+  "preserve_paths": "Pod/Scripts/*",
   "frameworks": [
     "UIKit",
     "CoreText"
   ],
-  "prepare_command": "echo \"HELLO\"\necho $PWD\necho $ENV"
+  "prepare_command": "./Pod/Scripts/ArtsySetup.rb"
 }

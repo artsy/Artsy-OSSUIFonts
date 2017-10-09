@@ -105,10 +105,10 @@ static BOOL useClosedFonts = false;
 + (UIFont *)sansSerifFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
-    NSString *fontFilename = useClosedFonts ? @"ITCAvantGardeDemi_Track03" : @"texgyreadventor-regular";
+    NSString *fontFilename = useClosedFonts ? @"AVG65lig" : @"texgyreadventor-regular";
 
-    NSString *type = useClosedFonts ? @"ttf" : @"ttf";
-    return [self ar_LoadAndReturnFont:@"AvantGardeGothicITCW01Dm" extension:type size:size onceToken:&onceToken fontFileName:fontFilename];
+    NSString *type = useClosedFonts ? @"otf" : @"ttf";
+    return [self ar_LoadAndReturnFont:@"AvantGardeGothicITC" extension:type size:size onceToken:&onceToken fontFileName:fontFilename];
 }
 
 + (UIFont *)smallCapsSerifFontWithSize:(CGFloat)size

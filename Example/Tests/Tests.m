@@ -36,7 +36,7 @@ it(@"serifItalicFont to be the right font", ^{
 });
 
 it(@"sansSerifFont to be the right font", ^{
-    expect([UIFont sansSerifFontWithSize:12].fontName).to.equal(@"AvantGardeGothicITCW01Dm");
+    expect([UIFont sansSerifFontWithSize:12].fontName).to.equal(@"AvantGardeGothicITC");
 });
 
 it(@"smallCapsSerifFont to be the right font", ^{

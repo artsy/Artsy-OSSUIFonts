@@ -2,12 +2,12 @@
 <font>
 <format>2.2</format>
 
-<postscript_name>AvantGardeGothicITCW01Dm</postscript_name>
-<name>Avante Garde Gothic ITCW01Dm</name>
+<postscript_name>AvantGardeGothicITC</postscript_name>
+<name>Avante Garde Gothic ITC</name>
 <subfamily>Regular</subfamily>
 <bold>false</bold>
 <italic>false</italic>
-<full_name>Avant Garde Gothic ITCW01Dm</full_name>
+<full_name>Avant Garde Gothic ITC</full_name>
 <unique_identifier>1.104;URW ;TeXGyreAdventor-Bold</unique_identifier>
 <version>Version 1.104;PS 1.104;hotconv 1.0.49;makeotf.lib2.0.14853 - artsy</version>
 <description></description>

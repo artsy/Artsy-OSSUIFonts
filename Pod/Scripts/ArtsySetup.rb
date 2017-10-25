@@ -3,7 +3,12 @@
 puts "Trying to clone Artsy's Private fonts, it is OK if it fails."
 
 # Artsy Staff gets the real fonts, which are kept behind closed doors.
-`git clone https://github.com/artsy/Artsy-UIFonts tmp_fonts`
+if ENV["GITHUB_SUBMODULES_USER"]
+  # Support passing in an ENV var with an access token for a custom user 
+  `git clone https://#{ENV["GITHUB_SUBMODULES_USER"]}@github.com/artsy/Artsy-UIFonts tmp_fonts`
+else
+  `git clone https://github.com/artsy/Artsy-UIFonts tmp_fonts`
+end
 
 # This could fail
 if Dir.exist? "tmp_fonts"

@@ -43,4 +43,20 @@ it(@"smallCapsSerifFont to be the right font", ^{
     expect([UIFont smallCapsSerifFontWithSize:12].fontName).to.equal(@"AGaramondPro-Regular");
 });
 
+it(@"displaySansSerifFontWithSize to be the right font", ^{
+    expect([UIFont displaySansSerifFontWithSize:12].fontName).to.equal(@"Helvetica-Light");
+});
+
+it(@"displayItalicSansSerifFontWithSize to be the right font", ^{
+    expect([UIFont displayItalicSansSerifFontWithSize:12].fontName).to.equal(@"Helvetica-LightOblique");
+});
+
+it(@"displayMediumSansSerifFontWithSize to be the right font", ^{
+    expect([UIFont displayMediumSansSerifFontWithSize:12].fontName).to.equal(@"Helvetica");
+});
+
+it(@"displayMediumItalicSansSerifFontWithSize to be the right font", ^{
+    expect([UIFont displayMediumItalicSansSerifFontWithSize:12].fontName).to.equal(@"Helvetica-Oblique");
+});
+
 SpecEnd

@@ -127,4 +127,47 @@ static BOOL useClosedFonts = false;
     return [UIFont fontWithDescriptor:fontDescriptor size:size];
 }
 
+/// Unica
++ (UIFont *)displaySansSerifFontWithSize:(CGFloat)size
+{
+    static dispatch_once_t onceToken;
+    if (!useClosedFonts) {
+        return [UIFont fontWithName:@"Helvetica-Light" size:size];
+    }
+
+    return [self ar_LoadAndReturnFont:@"Unica77LL-Regular" extension:@"otf" size:size onceToken:&onceToken fontFileName:@"Unica77LL-Regular"];
+}
+
+/// Unica Italic
++ (UIFont *)displayItalicSansSerifFontWithSize:(CGFloat)size
+{
+    static dispatch_once_t onceToken;
+    if (!useClosedFonts) {
+        return [UIFont fontWithName:@"Helvetica-LightOblique" size:size];
+    }
+
+    return [self ar_LoadAndReturnFont:@"Unica77LL-Italic" extension:@"otf" size:size onceToken:&onceToken fontFileName:@"Unica77LL-Italic"];
+}
+
+/// Unica Medium
++ (UIFont *)displayMediumSansSerifFontWithSize:(CGFloat)size
+{
+    static dispatch_once_t onceToken;
+    if (!useClosedFonts) {
+        return [UIFont fontWithName:@"Helvetica" size:size];
+    }
+
+    return [self ar_LoadAndReturnFont:@"Unica77LL-Medium" extension:@"otf" size:size onceToken:&onceToken fontFileName:@"Unica77LL-Medium"];
+}
+
+/// Unica Medium Italic
++ (UIFont *)displayMediumItalicSansSerifFontWithSize:(CGFloat)size
+{
+    static dispatch_once_t onceToken;
+    if (!useClosedFonts) {
+        return [UIFont fontWithName:@"Helvetica-Oblique" size:size];
+    }
+
+    return [self ar_LoadAndReturnFont:@"Unica77LL-MediumItalic" extension:@"otf" size:size onceToken:&onceToken fontFileName:@"Unica77LL-MediumItalic"];
+}
 @end

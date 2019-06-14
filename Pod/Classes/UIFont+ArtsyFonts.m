@@ -102,6 +102,32 @@ static BOOL useClosedFonts = false;
     return [self ar_LoadAndReturnFont:@"AGaramondPro-Italic" extension:type size:size onceToken:&onceToken fontFileName:fontName];
 }
 
++ (UIFont *)reactNativeSerifSemiBoldFontWithSize:(CGFloat)size
+{
+    // This does not have corresponding OSS variant, so we re-use the bold one
+    static dispatch_once_t onceToken;
+    NSString *fontName = useClosedFonts ? @"ReactNativeAGaramondPro-Semibold" : @"EBGaramond08-Regular";
+    NSString *font = useClosedFonts ? @"ReactNativeAGaramondPro-Semibold" : @"AGaramondPro-Bold";
+    NSString *type = useClosedFonts ? @"otf" : @"ttf";
+    return [self ar_LoadAndReturnFont:font extension:type size:size onceToken:&onceToken fontFileName:fontName];
+}
+
++ (UIFont *)reactNativeSerifFontWithSize:(CGFloat)size
+{
+    static dispatch_once_t onceToken;
+    NSString *font = useClosedFonts ? @"ReactNativeAGaramondPro-Regular" : @"EBGaramond12-Regular";
+    NSString *type = useClosedFonts ? @"otf" : @"ttf";
+    return [self ar_LoadAndReturnFont:@"ReactNativeAGaramondPro-Regular" extension:type size:size onceToken:&onceToken fontFileName:font];
+}
+
++ (UIFont *)reactNativeSerifItalicFontWithSize:(CGFloat)size
+{
+    static dispatch_once_t onceToken;
+    NSString *fontName = useClosedFonts ? @"ReactNativeAGaramondPro-Italic" : @"EBGaramond12-Italic";
+    NSString *type = useClosedFonts ? @"otf" : @"ttf";
+    return [self ar_LoadAndReturnFont:@"ReactNativeAGaramondPro-Italic" extension:type size:size onceToken:&onceToken fontFileName:fontName];
+}
+
 + (UIFont *)sansSerifFontWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
@@ -115,7 +141,7 @@ static BOOL useClosedFonts = false;
 {
     // Force font to be loaded into CoreText system first.
     __unused UIFont *font = [self serifFontWithSize:size];
-    
+
     NSArray *fontFeatureSettings = @[ @{ UIFontFeatureTypeIdentifierKey: @(38),
                                          UIFontFeatureSelectorIdentifierKey : @(1) } ];
 

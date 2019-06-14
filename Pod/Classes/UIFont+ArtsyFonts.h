@@ -15,6 +15,18 @@
 /// Garamond Italic
 + (UIFont *)serifItalicFontWithSize:(CGFloat)size;
 
+/// *** These RN-specific versions of Garamond exist to work around a line-height rendering bug in iOS *** ///
+/// *** https://github.com/facebook/react-native/issues/7687#issuecomment-340068360 *** ///
+
+/// React Native Garamond
++ (UIFont *)reactNativeSerifFontWithSize:(CGFloat)size;
+
+/// React Native Garamond Semibold
++ (UIFont *)reactNativeSerifFontWithSize:(CGFloat)size;
+
+/// React Native Garamond Italic
++ (UIFont *)reactNativeSerifFontItalicWithSize:(CGFloat)size;
+
 /// Avant Garde
 + (UIFont *)sansSerifFontWithSize:(CGFloat)size;
 

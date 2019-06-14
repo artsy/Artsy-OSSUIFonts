@@ -120,7 +120,7 @@ static BOOL useClosedFonts = false;
     return [self ar_LoadAndReturnFont:@"ReactNativeAGaramondPro-Regular" extension:type size:size onceToken:&onceToken fontFileName:font];
 }
 
-+ (UIFont *)reactNativeSerifItalicFontWithSize:(CGFloat)size
++ (UIFont *)reactNativeSerifFontItalicWithSize:(CGFloat)size
 {
     static dispatch_once_t onceToken;
     NSString *fontName = useClosedFonts ? @"ReactNativeAGaramondPro-Italic" : @"EBGaramond12-Italic";

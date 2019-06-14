@@ -22,7 +22,7 @@
 + (UIFont *)reactNativeSerifFontWithSize:(CGFloat)size;
 
 /// React Native Garamond Semibold
-+ (UIFont *)reactNativeSerifFontWithSize:(CGFloat)size;
++ (UIFont *)reactNativeSerifFontSemiboldWithSize:(CGFloat)size;
 
 /// React Native Garamond Italic
 + (UIFont *)reactNativeSerifFontItalicWithSize:(CGFloat)size;

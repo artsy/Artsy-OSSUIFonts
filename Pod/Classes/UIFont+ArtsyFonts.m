@@ -102,7 +102,7 @@ static BOOL useClosedFonts = false;
     return [self ar_LoadAndReturnFont:@"AGaramondPro-Italic" extension:type size:size onceToken:&onceToken fontFileName:fontName];
 }
 
-+ (UIFont *)reactNativeSerifSemiBoldFontWithSize:(CGFloat)size
++ (UIFont *)reactNativeSerifFontSemiboldWithSize:(CGFloat)size
 {
     // This does not have corresponding OSS variant, so we re-use the bold one
     static dispatch_once_t onceToken;
